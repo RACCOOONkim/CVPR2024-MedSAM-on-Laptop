@@ -63,7 +63,7 @@ python CVPR24_LiteMedSAM_infer_KT2.py -i INPUTS_FOLDER -o OUTPUTS_FOLDER -lite_m
 
 ## Results
 
-Our method's performance on the [CVPR 2024: Segment Anything In Medical Images On Laptop Challenge](https://www.codabench.org/competitions/1847/#/pages-tab) is as follows:
+Our method's performance on the [CVPR 2024: Segment Anything In Medical Images On Laptop Challenge](https://www.codabench.org/competitions/1847/#/pages-tab)'s final testing set is as follows:
 
 
 | Target              | DSC(%)                   | NSD(%)                   | Runtime (s)              |
@@ -91,5 +91,5 @@ We thank all the data owners for making the medical images publicly available an
 ## Citations
 
 ```
-Your Conference Paper Citation Here
+[SwiftMedSAM Paper](https://openreview.net/forum?id=8l8JVb7nUB&nesting=2&sort=date-desc)
 ```
