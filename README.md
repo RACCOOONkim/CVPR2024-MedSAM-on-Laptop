@@ -8,7 +8,7 @@ This repository offers the solution by Team snuhmii for the [CVPR 2024: Segment 
 
 Further details of our method can be found in our paper: **[SwiftMedSAM: An Ultra-Lightweight Prompt-based Universal Medical Image Segmentation Model for Highly Constrained Environments](https://openreview.net/forum?id=8l8JVb7nUB&nesting=2&sort=date-desc)**.
 
-Our work builds upon [MedSAM](https://github.com/bowang-lab/MedSAM). You can get our docker by:
+Our work builds upon [MedSAM](https://github.com/bowang-lab/MedSAM).(LiteMedSAM) You can get our docker by:
 ```bash
 docker pull kwangtai/swiftmedsam:latest
 ```
@@ -22,15 +22,13 @@ To set up, follow:
 
 ```bash
 git clone https://github.com/YoungKong/CVPR2024-MedSAM-on-Laptop.git
-cd 
+cd CVPR2024-MedSAM-on-Laptop
 pip install -e .
-path.sh
 ```
 
 ## Dataset
 
-The training dataset includes 4,000 images: 2,200 partially labeled and 1,800 unlabeled. Two sets of pseudo-labels, each containing 4,000 images, were sourced from FLARE22. Additionally, there's a 100-image validation set and a 400-image test set. 
-
+The training dataset includes a large-scale dataset with over one million image-mask pairs based on publicly available datasets. This dataset covers 11 imaging modalities, including Computed Tomography (CT), Magnetic Resonance Imaging (MRI), Positron Emission Tomography (PET), X-ray, ultrasound, mammography, Optical Coherence Tomography (OCT), endoscopy, fundus, dermoscopy, and microscopy.
 Download the dataset [here](https://www.codabench.org/competitions/1847/#/pages-tab).
 
 
@@ -140,11 +138,11 @@ To train the Swift nnU-Net in the paper, run this command:
 nnUNet_train 3d_fullres nnUNetTrainerV2_FLARE_Swift 24 all -p nnUNetPlansFLARE23Swift
 ```
 
-## 4. Inference with Swift nnU-Net
+## 4. Inference with SwiftMedSAM
 
 Finally perform multi-organ and tumor segmentation using Swift nnU-Net
 ```bash
-nnUNet_predict -i INPUTS_FOLDER -o OUTPUTS_FOLDER  -t 24  -tr nnUNetTrainerV2_FLARE_Swift  -m 3d_fullres  -p nnUNetPlansFLARE23Swift  --all_in_gpu True   -f all  --mode fastest  --disable_tta
+python CVPR24_LiteMedSAM_infer_KT2.py -i INPUTS_FOLDER -o OUTPUTS_FOLDER -lite_medsam_checkpoint_path /workspace/work_dir/LiteMedSAM/modifiedv2_litemedsam_total.pth
 ```
 
 ## Results
@@ -177,7 +175,7 @@ Our method's performance on the [MICCAI FLARE23 Challenge](https://codalab.lisn.
 
 ## Acknowledgements
 
-We declare that the segmentation method we implemented for participation in the FLARE 2023 challenge has not used any pre-trained models nor additional datasets other than those provided by the organizers. The proposed solution is fully automatic without any manual intervention. We thank all the data owners for making the CT scans publicly available and CodaLab for hosting the challenge platform. This work was supported by Institute of Information & communications Technology Planning & Evaluation (IITP) grant funded by the Korea government(MSIT) (No. 2021-0-0052, Cloud-based XR content conversion and service technology development that changes according to device performance) and Institute of Information and Communications Technology Planning and Evaluation (IITP) grant funded by the Korea Government (MSIT) (No. 2021-0-00312, development of non-face-to-face patient infection activity prediction and protection management SW technology at home and community treatment centers for effective response to infectious disease).
+We thank all the data owners for making the medical images publicly available and CodaLab for hosting the challenge platform
 
 ## Citations
 
