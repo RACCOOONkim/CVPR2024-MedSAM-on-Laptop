@@ -31,7 +31,8 @@ path.sh
 
 The training dataset includes 4,000 images: 2,200 partially labeled and 1,800 unlabeled. Two sets of pseudo-labels, each containing 4,000 images, were sourced from FLARE22. Additionally, there's a 100-image validation set and a 400-image test set. 
 
-Download the dataset [here](https://codalab.lisn.upsaclay.fr/competitions/12239#learn_the_details-dataset).
+Download the dataset [here](https://www.codabench.org/competitions/1847/#/pages-tab).
+
 
 ## 1. Generate Pseudo-labels with Fine nnU-Net
 
