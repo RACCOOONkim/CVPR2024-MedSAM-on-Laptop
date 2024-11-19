@@ -21,7 +21,7 @@ More details can be found at [MedSAM's repository](https://github.com/bowang-lab
 To set up, follow:
 
 ```bash
-git clone https://github.com/YoungKong/CVPR2024-MedSAM-on-Laptop.git
+git clone https://github.com/RACCOOONkim/CVPR2024-MedSAM-on-Laptop.git
 cd CVPR2024-MedSAM-on-Laptop
 pip install -e .
 ```
