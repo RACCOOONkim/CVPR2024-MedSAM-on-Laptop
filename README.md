@@ -85,7 +85,8 @@ Our method's performance on the [CVPR 2024: Segment Anything In Medical Images O
 
 ## Acknowledgements
 
-We thank all the data owners for making the medical images publicly available and CodaLab for hosting the challenge platform
+We thank all the data owners for making the medical images publicly available and CodaLab [59] for hosting the challenge platform. This research was supported by a grant of ‘Korea Government Grant Program for Education and Research in Medical AI’ through the Korea Health Industry Development Institute(KHIDI), funded by the Korea government(MOE, MOHW), the NAVER Digital Bio Innovation Research Fund, funded by NAVER Corporation (Grant No. [3720230030]) and the Institute of Information & Communications Technology Planning & Evaluation(IITP)-Global Data-X Leader HRD program grant funded by the Korea government(MSIT)(IITP-2024-RS-2024-00441407).
+
 
 ## Citations
 
