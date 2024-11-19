@@ -33,8 +33,10 @@ Download the dataset [here](https://www.codabench.org/competitions/1847/#/pages-
 
 
 ## 1. Train SwiftMedSAM
-
-
+To train SwiftMedSAM using multiple GPUs, run the following commands
+```bash
+sh train_multi_gpus_KT2.sh
+```
 
 ## 2. Inference with SwiftMedSAM
 
