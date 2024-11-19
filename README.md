@@ -34,29 +34,11 @@ Download the dataset [here](https://www.codabench.org/competitions/1847/#/pages-
 
 ## 1. Train SwiftMedSAM
 
-### 3.1 Dataset conversion
 
-Prepare 2200 pseudo-labels and 1800 pseudo-labels generated using the Label Fusion Algorithm, for a total of 4000 labels. And give a new TaskID (e.g. Task024) and organize the 4000 Pseudo Labeled Data as above.
-
-### 3.2 Data Preprocessing
-
-Preprocess the data with the settings we set as Swift nnU-Net.
-```bash
-nnUNet_plan_and_preprocess -t 24 -pl3d ExperimentPlanner3D_FLARE23Swift -pl2d None 
-```
-
-### 3.3 Train Swift nnU-Net with 4,000 pseudo-labels
-
-You can train the Swift nnU-Net. In our work, we trained with the 4000 pseudo-labeled data, also you can train with 5-fold.
-
-To train the Swift nnU-Net in the paper, run this command:
-```bash
-nnUNet_train 3d_fullres nnUNetTrainerV2_FLARE_Swift 24 all -p nnUNetPlansFLARE23Swift
-```
 
 ## 2. Inference with SwiftMedSAM
 
-Finally perform multi-organ and tumor segmentation using Swift nnU-Net
+Finally perform medical image segmentation using SwiftMedSAM
 ```bash
 python CVPR24_LiteMedSAM_infer_KT2.py -i INPUTS_FOLDER -o OUTPUTS_FOLDER -lite_medsam_checkpoint_path /work_dir/LiteMedSAM/modifiedv2_litemedsam_total.pth
 ```
