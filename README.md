@@ -2,7 +2,7 @@
 # SwiftMedSAM: An Ultra-Lightweight Prompt-based Universal Medical Image Segmentation Model for Highly Constrained Environments
 
 Framework of our solution:
-![Overall framework](./imgs/overall.PNG)
+![Overall framework](./imgs/overall.png)
 
 This repository offers the solution by Team snuhmii for the [CVPR 2024: Segment Anything In Medical Images On Laptop Challenge](https://www.codabench.org/competitions/1847/).
 
