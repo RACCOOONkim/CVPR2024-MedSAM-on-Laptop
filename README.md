@@ -91,5 +91,5 @@ We thank all the data owners for making the medical images publicly available an
 ## Citations
 
 ```
-[SwiftMedSAM Paper](https://openreview.net/forum?id=8l8JVb7nUB&nesting=2&sort=date-desc)
+[SwiftMedSAM Paper](https://openreview.net/forum?id=8l8JVb7nUB&nesting=2&sort=date-desc).
 ```
