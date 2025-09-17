@@ -73,5 +73,16 @@ We thank all the data owners for making the medical images publicly available an
 
 
 ## Citations
-
-[SwiftMedSAM Paper](https://openreview.net/forum?id=8l8JVb7nUB&nesting=2&sort=date-desc).
+@inproceedings{Kong2025SwiftMedSAM,
+  author    = {Kong, Youngbin and Kim, Kwangtai and Jeong, Seoi and Lee, Kyu Eun and Kong, Hyoun-Joong},
+  editor    = {Ma, Jun and Zhou, Yuyin and Wang, Bo},
+  title     = {SwiftMedSAM: An Ultra-lightweight Prompt-Based Universal Medical Image Segmentation Model for Highly Constrained Environments},
+  booktitle = {Medical Image Segmentation Foundation Models. CVPR 2024 Challenge: Segment Anything in Medical Images on Laptop},
+  year      = {2025},
+  publisher = {Springer Nature Switzerland},
+  address   = {Cham},
+  pages     = {180--194},
+  isbn      = {978-3-031-81854-7},
+  doi       = {10.1007/978-3-031-81854-7_12}
+}
+[Paper Link](https://openreview.net/forum?id=8l8JVb7nUB&nesting=2&sort=date-desc).
