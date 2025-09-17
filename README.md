@@ -78,7 +78,7 @@ We thank all the data owners for making the medical images publicly available an
 If you find this work useful, please cite:
 
 ```bibtex
-@inproceedings{Kong2025SwiftMedSAM,
+@inproceedings{SwiftMedSAM,
   author    = {Kong, Youngbin and Kim, Kwangtai and Jeong, Seoi and Lee, Kyu Eun and Kong, Hyoun-Joong},
   editor    = {Ma, Jun and Zhou, Yuyin and Wang, Bo},
   title     = {SwiftMedSAM: An Ultra-lightweight Prompt-Based Universal Medical Image Segmentation Model for Highly Constrained Environments},
