@@ -74,6 +74,7 @@ We thank all the data owners for making the medical images publicly available an
 
 ## Citation
 
+[Paper Link](https://openreview.net/forum?id=8l8JVb7nUB&nesting=2&sort=date-desc).
 If you find this work useful, please cite:
 
 ```bibtex
@@ -90,4 +91,3 @@ If you find this work useful, please cite:
   doi       = {10.1007/978-3-031-81854-7_12}
 }
 
-[Paper Link](https://openreview.net/forum?id=8l8JVb7nUB&nesting=2&sort=date-desc).
